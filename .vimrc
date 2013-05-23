@@ -1,3 +1,6 @@
+" Load Pathogen
+execute pathogen#infect()
+
 " Alias .dox files to C syntax
 au BufNewFile,BufRead *.dox set filetype=c
 

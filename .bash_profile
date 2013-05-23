@@ -1,3 +1,4 @@
+export editor=vim
 export SVN_EDITOR=vim
 
 SSH_ENV="$HOME/.ssh/environment"
@@ -23,8 +24,11 @@ fi
 PATH=$HOME/bin:$HOME/google_appengine:$PATH
 export PATH
 
+PYTHONPATH=~/.local/lib/python2.6:$PYTHONPATH
+export PYTHONPATH
+
 # no more giant tabs
 tabs -4
 
 alias ls="ls --color=always"
-
+alias git=hub
