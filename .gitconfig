@@ -1,0 +1,6 @@
+[user]
+	name = Dan Albert
+	email = dan@gingerhq.net
+[core]
+	editor = vim
+	autocrlf = input
