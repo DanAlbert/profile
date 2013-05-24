@@ -21,11 +21,15 @@ else
      start_agent;
 fi
 
-PATH=$HOME/bin:$HOME/google_appengine:$PATH
+PATH=$HOME/bin:$PATH
 export PATH
 
 PYTHONPATH=~/.local/lib/python2.6:$PYTHONPATH
 export PYTHONPATH
+
+if [ -f ~/.bash_profile_local ]; then
+    . ~/.bash_profile_local
+fi
 
 # no more giant tabs
 tabs -4
