@@ -1,6 +1,9 @@
 " Load Pathogen
 execute pathogen#infect()
 
+" Set GUI font
+set gfn=DejaVu\ Sans\ Mono\ 11
+
 " Alias .dox files to C syntax
 au BufNewFile,BufRead *.dox set filetype=c
 
@@ -30,6 +33,10 @@ highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE gui
 " Auto-detect indent settings
 if has("autocmd")
 	filetype plugin indent on
+endif
+
+if has("autocmd")
+	au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
 " Highlight beyond 80 characters
