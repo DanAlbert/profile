@@ -1,3 +1,12 @@
+src/
+
+.viminfo
+.cache
+.ssh
+.lesshst
+.ecryptfs
+.Private
+.bash_history
 .*.s[a-w][a-z]
 *.un~
 Session.vim

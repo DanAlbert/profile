@@ -40,6 +40,10 @@ if has("autocmd")
 	au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
+"  move text and rehighlight -- vim tip_id=224 
+vnoremap > ><CR>gv 
+vnoremap < <<CR>gv 
+
 " Highlight beyond 80 characters
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
