@@ -9,6 +9,9 @@ au BufNewFile,BufRead *.dox set filetype=c
 
 syntax on
 
+" In case this machine's implementation of backspace is borked
+set backspace=indent,eol,start
+
 " Tab config
 set tabstop=4
 set shiftwidth=4
